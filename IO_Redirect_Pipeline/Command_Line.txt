@@ -1,0 +1,9 @@
+1 cc -o redirect1 Redirect1.c
+2 cc -o redirect2 Redirect2.c
+3 ./redirect1
+4 ./redirect1 > ./result.1
+5 cat result.1
+6 ./redirect1 >> ./result.1
+7 cat result.1
+8 ./redirect2 < ./result.1
+9 ./redirect1 | ./redirect2
